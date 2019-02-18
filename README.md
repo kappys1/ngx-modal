@@ -1,10 +1,8 @@
-# NgxModalLib
+# NgxEasyModal
 
 ## Install
-
-1. Install from NPM 
 ```
-    npm install ngx-modal --save
+    npm install ngx-easy-modal --save
 ```
 
 ## Examples
