@@ -4,58 +4,17 @@
 </header>
 
 <main>
-
   <section>
-    <header><h2>Install</h2></header>
-      <article>
-        <p>1. Install from NPM</p>
-        <pre><code>npm install ngx-modal --save</code></pre>
-      </article>
-      <article>
-        <p>2.Add to import Modules and Add to entry entryComponents in @NgModules, the modules that you want to put inside the modal.</p>
-        <pre>
-          <code>
-@NgModule({{ '{' }}
-  declarations: [
-    AppComponent,
-    SampleModalComponent,
-  ],
-  entryComponents: [
-    SampleModalComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    NgxModalModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-        </code>
-        </pre>
-      </article>
-      <article>
-        <p>3. Import your Service in a component and Create a new Modal.</p>
-        <pre>
-          <code>
-export class AppComponent {{ '{' }}
-
-  constructor(private modalService: NgxModalService) {{ '{' }}
-
-  }
-
-  openModal(){{ '{' }}
-    const params = {{ '{' }}};
-    this.modalService.create(SampleModalComponent, params).then((modal: NgxModal) => {{ '{' }}
-      modal.open();
-    });
-  }
-
-}
-        </code>
-        </pre>
-        <p>in params, you can add all params that you have into your component for init with values.</p>
-      </article>
+      <header>
+          <h2>Install</h2>
+          <pre><code>npm install ngx-modal --save</code></pre>
+      </header>
+  </section>
+  <section>
+      <header>
+          <h2>Documentation</h2>
+          <p><a target="_blank" href="https://github.com/kappys1/ngx-modal">here.</a></p>
+      </header>
   </section>
   <section>
       <header>

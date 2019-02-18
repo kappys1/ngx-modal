@@ -17,14 +17,14 @@ header{
   }
 }
 code { 
-  background-color: #eee;
+  background-color: lighten($primary,45%);
   border: 1px solid #999;
   display: block;
   padding: 20px;
 }
 
 pre {
-  max-width: 100%;
+  max-width: 750px;
   white-space: pre-wrap;
 }
 footer{
