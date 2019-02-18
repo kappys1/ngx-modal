@@ -1,11 +1,18 @@
 {
   "name": "ngx-modal-lib",
-  "version": "0.1.1",
+  "version": "0.1.2-0",
   "author": {
     "name": "Alejandro Marcos Gutierrez",
     "email": "alexsbd1@gmail.com"
   },
-  "keywords": ["modal", "ngx", "angular2", "angular5", "angualar7", "simple"],
+  "keywords": [
+    "modal",
+    "ngx",
+    "angular2",
+    "angular5",
+    "angualar7",
+    "simple"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
