@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [0.1.0-0](https://github.com/kappys1/ngx-modal/compare/v0.0.1...v0.1.0-0) (2019-02-18)
+
+
+### Features
+
+* **readme:** documentation ([6c70efb](https://github.com/kappys1/ngx-modal/commit/6c70efb))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 ## [0.0.1](https://github.com/kappys1/ngx-modal/compare/v0.0.1-0...v0.0.1) (2019-02-18)
 
 
