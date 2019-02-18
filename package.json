@@ -1,6 +1,6 @@
 {
   "name": "ngx-modal-lib",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": {
     "name": "Alejandro Marcos Gutierrez",
     "email": "alexsbd1@gmail.com"
@@ -22,9 +22,9 @@
     "e2e": "ng e2e",
     "gh-pages": "npm run build && npx ngh --dir=dist/ngx-modal-lib",
     "build-lib": "ng build ngx-modal",
-    "publish:release": "node scripts/publish.js release",
-    "publish:pre": "node scripts/publish.js prerelease",
-    "publish:alpha": "node scripts/publish.js alpha"
+    "publish:release": "node scripts/publish.js major",
+    "publish:pre": "node scripts/publish.js minor",
+    "publish:alpha": "node scripts/publish.js patch"
   },
   "private": true,
   "dependencies": {
