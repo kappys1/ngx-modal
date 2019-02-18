@@ -1,0 +1,14 @@
+:host{
+  width: 75%;
+  height: 75%;
+  background: white;
+  font-size: 1.6rem;
+  padding: 1em 2em;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    //CSS
+    width: 50%;
+    height: 50%;
+  }
+
+}

@@ -1,0 +1,48 @@
+@import "../theme/variables";
+/deep/ ngx-modal{
+
+  &.fade{
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &.show{
+    opacity: 1;
+  }
+}
+
+header{
+  font-size: 2.3rem;
+  p{
+    font-size: 1.5rem;
+  }
+}
+
+footer{
+  position: static;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background: $primary;
+  width: 100%;
+  height: 50px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+

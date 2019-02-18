@@ -1,0 +1,13 @@
+<header>
+  <h1>Sample Modal</h1>
+</header>
+<section>
+  <article>
+    <button (click)="close()">close</button>
+    <ng-container *ngIf="paramValue">
+      <input [(ngModel)]="paramValue">
+    </ng-container>
+    <div>orem ipsum dolor sit amet consectetur adipiscing elit cursus tristique, augue massa platea arcu eu lacinia bibendum sapien himenaeos, ridiculus pellentesque blandit euismod nostra fames ultricies sociosqu</div>
+  </article>
+</section>
+<div>

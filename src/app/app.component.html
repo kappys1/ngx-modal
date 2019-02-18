@@ -1,0 +1,52 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header>
+  <h1>{{title}}</h1>
+</header>
+
+<main>
+
+  <section>
+    <header><h2>Install</h2></header>
+      <article>
+        <h3>Install </h3>
+        <button (click)="openSampleModal()">Open Modal</button>
+      </article>
+  </section>
+  <section>
+      <header>
+        <h2>Examples</h2>
+        <p><a target="_blank" href="https://github.com/kappys1/ngx-modal/blob/master/src/app/app.component.ts">see code here.</a></p>
+      </header>
+      <article>
+        <h3>Sample Modal</h3>
+        <button (click)="openSampleModal()">Open Modal</button>
+      </article>
+      <article>
+        <h3>Close background</h3>
+        <button (click)="openBackdropModal()">Open Modal</button>
+      </article>
+      <article>
+        <h3>Events On Destroy</h3>
+        <button (click)="openEventsModal()">Open Modal</button>
+      </article>
+      <article>
+        <h3>Pass Parameters</h3>
+        <input [(ngModel)]="inputValue">
+        <button (click)="openCheckbutton()">Open Modal</button>
+      </article>
+      <article>
+        <h3>Animation Modal</h3>
+        <button (click)="openAnimation()">Open Modal</button>
+      </article>
+  </section>
+</main>
+<footer>
+  {{year}} © Angular 2 carousel
+</footer>
+
+
+
+
+
+
+
