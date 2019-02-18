@@ -23,10 +23,12 @@ export class NgxModalComponent implements OnInit, AfterViewInit {
   }
 
   open() {
+    document.getElementsByTagName('body')[0].classList.add('no-scroll');
     setTimeout(() => this.elRef.nativeElement.classList.add('show'), 200);
   }
 
   close() {
+    document.getElementsByTagName('body')[0].classList.remove('no-scroll');
     setTimeout(() => this.elRef.nativeElement.classList.remove('show'), 200);
   }
 

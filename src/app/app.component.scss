@@ -16,7 +16,17 @@ header{
     font-size: 1.5rem;
   }
 }
+code { 
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
 
+pre {
+  max-width: 100%;
+  white-space: pre-wrap;
+}
 footer{
   position: static;
   bottom: 0;

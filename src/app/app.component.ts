@@ -12,8 +12,9 @@ export class AppComponent {
   title = 'ngx-modal';
   inputValue;
   year = new Date().getFullYear();
+  modal;
 
-  constructor(private modalController: NgxModalService) {
+  constructor(private modalService: NgxModalService) {
 
   }
 
@@ -21,6 +22,17 @@ export class AppComponent {
     this.openModal().then((modal: NgxModal) => {
       modal.open();
     });
+  }
+
+  openModalWithoutDestroy() {
+    if (this.modal) {
+      this.modal.open();
+    } else {
+      this.openModal({destroy: false}).then((modal: NgxModal) => {
+        this.modal = modal;
+        this.modal.open();
+      });
+    }
   }
 
   openBackdropModal() {
@@ -55,6 +67,6 @@ export class AppComponent {
   }
 
   openModal(params = {}) {
-    return this.modalController.create(SampleModalComponent, params);
+    return this.modalService.create(SampleModalComponent, params);
   }
 }

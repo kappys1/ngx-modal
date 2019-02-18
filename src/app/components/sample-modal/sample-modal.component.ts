@@ -11,6 +11,7 @@ export class SampleModalComponent implements OnInit {
   modal: NgxModal;
 
   paramValue;
+  destroy = true;
 
   constructor() { }
 
@@ -18,7 +19,10 @@ export class SampleModalComponent implements OnInit {
   }
 
   close() {
-    this.modal.destroy();
+    this.modal.close();
+    if (this.destroy) {
+      this.modal.destroy();
+    }
   }
 
 }
