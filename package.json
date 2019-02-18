@@ -5,6 +5,7 @@
     "name": "Alejandro Marcos Gutierrez",
     "email": "alexsbd1@gmail.com"
   },
+  "keywords": ["modal", "ngx", "angular2", "angular5", "angualar7", "simple"],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,6 +13,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "gh-pages": "npm run build && npx ngh --dir=dist/ngx-modal-lib",
     "build-lib": "ng build ngx-modal",
     "release": "node scripts/publish.js release",
     "prerelease": "node scripts/publish.js prerelease",
