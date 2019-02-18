@@ -1,10 +1,18 @@
 {
   "name": "ngx-easy-modal",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Alejandro Marcos Gutierrez",
     "email": "alexsbd1@gmail.com"
   },
+  "Keywords": [
+    "modal",
+    "ngx",
+    "angular2",
+    "angular5",
+    "angualar7",
+    "simple"
+  ],
   "peerDependencies": {
     "@angular/common": "^7.1.0",
     "@angular/core": "^7.1.0"
