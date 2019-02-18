@@ -18,24 +18,17 @@ export class NgxModalService {
 
   private loadComponent(component: any) {
 
-    // let newNode = document.createElement('div');
-    // newNode.id = 'placeholder';
-    // document.getElementsByTagName('body')[0].appendChild(newNode);
-
-    // 1. Create a component reference from the component
     const componentRef = this.componentFactoryResolver
       .resolveComponentFactory(component);
-      // .create(this.injector);
 
     return componentRef;
 
   }
 
   private loadView(componentRef) {
-    // 2. Attach component to the appRef so that it's inside the ng component tree
+
     this.appRef.attachView(componentRef.hostView);
 
-    // 3. Get DOM element from component
     const domElem = (componentRef.hostView as EmbeddedViewRef<any>)
       .rootNodes[0] as HTMLElement;
 

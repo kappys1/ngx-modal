@@ -22,9 +22,9 @@
     "e2e": "ng e2e",
     "gh-pages": "npm run build && npx ngh --dir=dist/ngx-modal-lib",
     "build-lib": "ng build ngx-modal",
-    "release": "node scripts/publish.js release",
-    "prerelease": "node scripts/publish.js prerelease",
-    "alpha": "node scripts/publish.js alpha"
+    "publish:release": "node scripts/publish.js release",
+    "publish:prerelease": "node scripts/publish.js prerelease",
+    "publish:alpha": "node scripts/publish.js alpha"
   },
   "private": true,
   "dependencies": {
