@@ -13,7 +13,7 @@ const changelogPathDest = path.join(process.cwd(), 'dist/ngx-modal/CHANGELOG.md'
 const fs = require('fs');
 
 function log(...args) {
-    args[0] = '[sport-dl-theme] ' + args[0]
+    args[0] = '[ngx-modal] ' + args[0]
     console.log(...args)
 }
 
@@ -28,10 +28,10 @@ function newBuild(){
 }
 
 function updateVersion(type){
-    if(type === 'alpha' || type === 'prerelease' || type === 'release'){
+    if(type.indexOf('alpha') !== -1 || type.indexOf('prerelease') !== -1 || type.indexOf('release') !== -1){
         log('   updating version ...');
         return serialCommands([
-                ['standard-version', [`--${type}`]]
+                ['standard-version', ['--'],[`--${type}`]]
             ]).then(async val => {
                 var objPkg = await readPackageJson(pkgPath);
                 var objLibPkg = await readPackageJson(pkgLibPath);
@@ -42,7 +42,7 @@ function updateVersion(type){
             })
     }
     else{
-        throw new Error('[sport-dl-theme] -> no es un tipo de version(alpha, prerelease, release)' )
+        throw new Error('[ngx-modal] -> no es un tipo de version(alpha, prerelease, release)' )
     }
 }
 

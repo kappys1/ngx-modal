@@ -1,4 +1,10 @@
 # NgxEasyModal
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![npm version](https://badge.fury.io/js/ngx-easy-modal.svg)](https://badge.fury.io/js/ngx-easy-modal)
+![Ngx](https://img.shields.io/badge/ngx-SUCCESS-blue.svg?style=flat)
+![licence](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat)
+
+
 
 ## Install
 ```
